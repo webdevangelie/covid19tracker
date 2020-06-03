@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Covid Tracker</title>
+</head>
+<body>
+    <header class="animate__animated animate__bounce">
+        <h1>Global COVID 19 Tracker</h1>
+        <h3 class="td">Insert date here</h3>
+    </header>
+    <div id="data">
+        <div class="box box-confirmed">
+            <h2>Total Confirmed</h2>
+            <p id="tcases"></p>
+            <img src="img/virus.png" alt="">
+        </div>
+        <div class="box box-death">
+            <h2>Total Deaths</h2>
+            <p id="tdeaths"></p>
+            <img src="img/grave.svg" alt="">
+        </div>
+        <div class="box box-recovered">
+            <h2>Total Recovered</h2>
+            <p id="trecovered"></p>
+            <img src="img/recovered.svg" alt="">
+        </div>
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>

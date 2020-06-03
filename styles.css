@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f3f3;
+  /* overflow: hidden; */
+}
+
+/* GLOBAL */
+
+header {
+  margin-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#data {
+  margin: 130px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  width: 300px;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.box::after {
+  content: '';
+  background-color: lightgreen;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.box-confirmed::after {
+  background-color: red;
+}
+
+.box-death::after {
+  background-color: black;
+}
+
+.box > h2 {
+  margin-bottom: 20px;
+}
+
+.box > p {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 50px;
+}
+
+.td {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  #data {
+    margin: 30px auto;
+  }
+}
